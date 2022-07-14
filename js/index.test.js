@@ -1,4 +1,4 @@
-const SkylabArray = require("./index");
+const SkylabArray = require("./SkylabArray.js");
 
 describe("Given the SkylabArray class constructor", () => {
   describe("When it's called it receives 'Marta' and 'Luis' and it's length is returned", () => {
@@ -7,7 +7,7 @@ describe("Given the SkylabArray class constructor", () => {
       const parameter2 = "Luis";
       const expectedLength = 2;
 
-      const length = new SkylabArray("Marta").length;
+      const { length } = new SkylabArray("Marta");
 
       expect(length).toBe(expectedLength);
     });
