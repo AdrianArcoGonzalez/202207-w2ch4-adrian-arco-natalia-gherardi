@@ -27,3 +27,17 @@ describe("Given a SkylabArray class constructor", () => {
     });
   });
 });
+
+describe("Given the SkylabArray class constructor", () => {
+  describe("When it's called it receives 'Marta' and 'Luis' and it's length is returned", () => {
+    test.only("Then it should return 2", () => {
+      const parameter1 = "Marta";
+      const parameter2 = "Luis";
+      const expectedLength = 2;
+
+      const { length } = new SkylabArray(parameter1, parameter2);
+
+      expect(length).toEqual(expectedLength);
+    });
+  });
+});
